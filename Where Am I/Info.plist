@@ -36,5 +36,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>I want to know the locaiton when you use the app</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>I want to know the location all the time</string>
 </dict>
 </plist>
