@@ -4,11 +4,7 @@ Convert location to USA address format
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         var usrLocation:CLLocation = locations[0] as CLLocation
         
-        latitude.text = "\(usrLocation.coordinate.latitude)"
-        longitude.text = "\(usrLocation.coordinate.longitude)"
-        heading.text = "\(usrLocation.course)"
-        speed.text = "\(usrLocation.speed)"
-        altitude.text = "\(usrLocation.altitude)"
+        ...
         
         // Convert to address
         CLGeocoder().reverseGeocodeLocation(usrLocation, completionHandler:{(placemarks, error) in
@@ -34,4 +30,11 @@ Convert location to USA address format
         
         ...
 
+Obtain detailed location information
+------------------------------------
+        latitude.text = "\(usrLocation.coordinate.latitude)"
+        longitude.text = "\(usrLocation.coordinate.longitude)"
+        heading.text = "\(usrLocation.course)"
+        speed.text = "\(usrLocation.speed)"
+        altitude.text = "\(usrLocation.altitude)"
 
